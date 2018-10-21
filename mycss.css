@@ -1,0 +1,45 @@
+body{
+	background-color: green;
+}
+
+div{
+	line-height: 120%;
+}
+
+p2{
+	margin: 32px 32px;
+	width: 100%
+	font-size: 13px;
+	font-family: Arial,"Times New Roman", serif;
+}
+
+p{
+	margin: 16px 32px;
+	font-family: Arial,"Times New Roman", serif;
+	font-size: 16px;
+}
+
+
+p4 {
+	margin: 0px 32px;
+	font-size: 13px;
+	font-family: Arial,"Times New Roman", serif;
+}
+
+p3 {
+	line-height: 120%;
+	margin: 0px 32px;
+	font-size: 16px;
+	font-family: Arial,"Times New Roman", serif;
+}
+
+
+h1{
+	word-wrap: break-word;
+	width= auto;
+	max-width= 100%
+	height= auto;
+	font-size: 19px;
+	font-family: Arial,"Times New Roman", serif;
+	margin: 64px 32px;
+}
