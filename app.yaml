@@ -1,0 +1,37 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# [START handlers]
+handlers:
+- url: /CSS
+  static_dir: CSS
+  
+- url: /1\.jpg
+  static_files: 1.jpg
+  upload: 1\.jpg
+
+- url: /2\.jpg
+  static_files: 2.jpg
+  upload: 2\.jpg
+
+- url: /3\.jpg
+  static_files: 3.jpg
+  upload: 3\.jpg
+
+- url: /4\.jpg
+  static_files: 4.jpg
+  upload: 4\.jpg
+
+- url: /.*
+  script: main.app
+# [END handlers]
+
+
+# [START libraries]
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+# [END libraries]
