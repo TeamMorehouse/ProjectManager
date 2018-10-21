@@ -20,8 +20,14 @@ class MainPage(webapp2.RequestHandler):
         template_values = {}
         template = JINJA_ENVIRONMENT.get_template('Start_Page.html')
         self.response.write(template.render(template_values))
+class Addproject(webapp2.RequestHandler):
+    def get(self):
+        template_values = {}
+        template = JINJA_ENVIRONMENT.get_template('ProjectDev.html')
+        self.response.write(template.render(template_values))
 
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
+    ('/add', Addproject),
 ], debug=True)
